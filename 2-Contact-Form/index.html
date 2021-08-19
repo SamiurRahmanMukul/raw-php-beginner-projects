@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+      crossorigin="anonymous"
+    />
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <!-- Webpage Title -->
+    <title>Contact Form / PHP Project</title>
+
+    <!-- Favicon -->
+    <link
+      rel="shortcut icon"
+      href="./assets/img/favicon.png"
+      type="image/png"
+    />
+  </head>
+  <body>
+    <!-- Contact Form -->
+    <div class="container contact-form">
+      <div class="contact-image">
+        <img
+          src="https://image.ibb.co/kUagtU/rocket_contact.png"
+          alt="rocket_contact"
+        />
+      </div>
+      <form action="./database/user-config.php" method="post" id="contact-form">
+        <h3>Drop Us a Message</h3>
+        <!-- text name input group -->
+        <div class="row">
+          <div class="col-md-6">
+            <div class="form-group">
+              <input
+                type="text"
+                name="txtName"
+                class="form-control"
+                placeholder="Your Name *"
+                value=""
+                required="name"
+                id="txtName"
+              />
+            </div>
+            <!-- text email input group -->
+            <div class="form-group">
+              <input
+                type="text"
+                name="txtEmail"
+                class="form-control"
+                placeholder="Your Email *"
+                value=""
+                required
+                id="txtEmail"
+              />
+            </div>
+            <!-- text phone input group -->
+            <div class="form-group">
+              <input
+                type="text"
+                name="txtPhone"
+                class="form-control"
+                placeholder="Your Phone Number *"
+                value=""
+                required
+                id="txtPhone"
+              />
+            </div>
+          </div>
+          <div class="col-md-6">
+            <!-- text message input group -->
+            <div class="form-group">
+              <textarea
+                name="txtMsg"
+                class="form-control"
+                placeholder="Your Message *"
+                style="width: 100%; height: 150px"
+                required
+                id="txtMsg"
+              ></textarea>
+            </div>
+
+            <!-- contract form submit button -->
+            <div class="form-group">
+              <input
+                type="submit"
+                name="btnSubmit"
+                class="btnContact"
+                value="Send Message"
+              />
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <!-- JQuery CDN -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
