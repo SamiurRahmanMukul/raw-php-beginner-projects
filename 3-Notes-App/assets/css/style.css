@@ -1,0 +1,155 @@
+* {
+  padding: 0;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 10px;
+  background-color: rgba(255, 255, 255, 0.4);
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+/* style implement */
+/* header */
+.heading {
+  display: block;
+  text-align: center;
+  text-shadow: 4px 3px 0px #fff, 9px 8px 0px rgba(0, 0, 0, 0.15);
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/* container form */
+.container-form {
+  width: 760px;
+  margin: 10px auto;
+}
+
+@media only screen and (max-width: 780px) {
+  .container-form {
+    width: 480px;
+  }
+}
+
+/* form */
+.new-notes {
+  padding: 20px;
+  border: 1px solid black;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.title {
+  display: block;
+  width: 100%;
+  height: 45px;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+.description {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.submit-btn {
+  display: block;
+  text-align: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 50px;
+  padding-right: 50px;
+  font-weight: bold;
+  font-size: 18px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+.submit-btn:hover {
+  cursor: pointer;
+}
+
+/* container notes */
+/* .container-notes {
+  display: flex;
+  flex-direction: row;
+} */
+
+/* notes */
+.notes {
+  width: 760px;
+  color: black;
+  background-color: yellow;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  margin-bottom: 10px;
+}
+@media only screen and (max-width: 780px) {
+  .notes {
+    width: 480px;
+  }
+}
+
+.note-title {
+  font-weight: 16px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.note-title:hover {
+  cursor: pointer;
+}
+
+.note-description {
+  text-align: justify;
+}
+
+.note-time {
+  display: block;
+  text-align: end;
+  margin-top: 10px;
+  font-style: italic;
+}
+.note-time:hover {
+  color: blue;
+}
+
+.note-delete {
+  display: inline-block;
+  position: relative;
+  margin-left: 715px;
+  padding: 1px 5px;
+}
+.note-delete:hover {
+  color: red;
+  cursor: pointer;
+}
+@media only screen and (max-width: 780px) {
+  .note-delete {
+    margin-left: 435px;
+  }
+}
