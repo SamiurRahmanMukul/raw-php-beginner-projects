@@ -1,0 +1,75 @@
+* {
+  padding: 0;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+/* header section */
+.brand-title {
+  width: 100%;
+  text-align: center;
+  text-shadow: 2px 7px 5px rgba(0, 0, 0, 0.3),
+    0px -4px 10px rgba(255, 255, 255, 0.3);
+  margin-top: 20px;
+  text-transform: uppercase;
+  font-size: 30px;
+}
+
+/* form / input section */
+.form-container {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.todo-text {
+  width: 300px;
+  height: 40px;
+  padding: 5px;
+}
+
+.todo-submit {
+  width: 120px;
+  height: 40px;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+.todo-submit:hover {
+  cursor: pointer;
+}
+
+.hr-line {
+  margin-top: 20px;
+  margin-bottom: 15px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+/* todo section */
+.todo-section {
+  margin: 10px;
+  text-align: center;
+}
+.todo-item {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.todo-form {
+  display: inline-block;
+}
+
+.todo-delete {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.todo-delete:hover {
+  color: red;
+  cursor: pointer;
+}
